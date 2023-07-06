@@ -37,11 +37,19 @@ faker = Faker()
 # Lire le fichier CSV
 df = pd.read_csv('./data/Emotion_final.csv')
 
+# Générer une liste de 400 patients fictifs
+patient_list = []
+for _ in range(400):
+    patient_list.append((faker.first_name(), faker.last_name()))
+
 # Itérer sur les lignes du DataFrame
 for _, row in df.iterrows():
+    # Sélectionner un patient de manière aléatoire dans la liste
+    patient = faker.random.choice(patient_list)
+    
     document = {
-        "patient_firstname": faker.first_name(),
-        "patient_lastname": faker.last_name(),
+        "patient_firstname": patient[0],
+        "patient_lastname": patient[1],
         "date": faker.date(),
         "text": row['Text']  # Utiliser le texte du fichier CSV
     }
