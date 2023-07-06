@@ -16,3 +16,11 @@ curl -X PUT "localhost:9200/notes" -H 'Content-Type: application/json' -d'
   }
 }
 '
+
+
+# patient_firstname : Le prénom du patient.
+# patient_lastname : Le nom de famille du patient.
+# date : La date de la note.
+# text : Le texte de la note.
+# emotion : L'émotion prédite par votre modèle de machine learning.
+# confidence : La confiance de la prédiction de l'émotion.
