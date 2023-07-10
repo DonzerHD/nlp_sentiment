@@ -40,3 +40,9 @@ predicted_class_label = int_to_emotion[predicted_class_index]
 
 # Afficher le label de la classe prédite
 print(predicted_class_label)
+import pickle
+
+# Charger le modèle à partir du fichier pickle
+with open('model_final_django.pkl', 'rb') as file:
+    model = pickle.load(file)
+
