@@ -1,0 +1,96 @@
+[33mcommit d27ee74f2165361e7fcbca46fe449d55bf76a7d1[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Mon Jul 10 16:18:05 2023 +0200
+
+    enleve model
+
+[33mcommit c978975a9e57ea7fab1fa048b34925740dcb5bcd[m
+Merge: f7dfd5e 587f534
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Mon Jul 10 15:40:06 2023 +0200
+
+    Merge branch 'main' of github.com:DonzerHD/nlp_sentiment
+
+[33mcommit f7dfd5e2e73b32b804d5692ad927621dc10f5d01[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Mon Jul 10 15:39:33 2023 +0200
+
+    Utilisation de Git LFS pour les fichiers .pkl
+
+[33mcommit 587f53442484a1e08408f2eb69b3fffb7d42d217[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Mon Jul 10 15:01:21 2023 +0200
+
+    ajout du model de huggingface
+
+[33mcommit 6b8557ee5a0ee26f82dea72c4bd8084bb628044e[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Thu Jul 6 16:57:25 2023 +0200
+
+    ajout des scripts et question ES
+
+[33mcommit 88e20dafcabb5acd4268928931ea53a8230289cd[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Thu Jul 6 11:14:19 2023 +0200
+
+    fichier renommé
+
+[33mcommit e6cba6d96286ff50dd0a99caa7b433564af4327c[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Thu Jul 6 10:57:12 2023 +0200
+
+    ajout répertoire data
+
+[33mcommit e3f6297ff516bdc7370ec1cda42ceb2c4dbd0b35[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Thu Jul 6 10:47:51 2023 +0200
+
+    meilleur disposition des fichiers
+
+[33mcommit e803e75bf0bcb138bd16b98802760cb3ca943e8b[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Thu Jul 6 10:47:34 2023 +0200
+
+    meilleur disposition des fichiers
+
+[33mcommit daa80d18f39a25bee41f1002d8a6e11a191ac5f0[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Tue Jul 4 16:32:40 2023 +0200
+
+    ajout ipynb queries analyse
+
+[33mcommit bea09d61c6ec3bd046291362e7603ebf6818ab26[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Tue Jul 4 15:32:10 2023 +0200
+
+    ajout script
+
+[33mcommit a57c08a5652a544218ac23ff9a9392e107658d1e[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Tue Jul 4 09:33:33 2023 +0200
+
+    enleve du fichier de trope
+
+[33mcommit eda66e15d73a011abdb11ee52a5cbed6708bb4f7[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Mon Jul 3 17:06:20 2023 +0200
+
+    ajout du jp propre
+
+[33mcommit 4f85bc4baed1fcbf012f17314c76a818faa46a16[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Mon Jul 3 15:04:34 2023 +0200
+
+    dataframe matrixe
+
+[33mcommit 58348b34e696e9b8933b64ebe8ad39237c0a20ee[m
+Author: DonzerHD <thomas.lemay59@outlook.fr>
+Date:   Mon Jul 3 11:05:41 2023 +0200
+
+    ajout données
+
+[33mcommit 0d6df47e5950af5c6408f442ad78d35c6da7579b[m
+Author: Thomas.l59 <113193305+DonzerHD@users.noreply.github.com>
+Date:   Mon Jul 3 11:03:05 2023 +0200
+
+    Initial commit
