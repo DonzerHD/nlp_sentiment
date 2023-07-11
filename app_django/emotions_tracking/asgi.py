@@ -1,5 +1,5 @@
 """
-ASGI config for emotion_tracking project.
+ASGI config for emotions_tracking project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'emotion_tracking.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'emotions_tracking.settings')
 
 application = get_asgi_application()
