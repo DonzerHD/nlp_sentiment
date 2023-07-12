@@ -1,0 +1,23 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: emotions
+    ports:
+      - 5432:5432
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+    environment:
+      - "discovery.type=single-node"
+    ports:
+      - 9200:9200

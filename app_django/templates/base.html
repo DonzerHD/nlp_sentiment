@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon site</title>
+    <!-- Mettez ici les balises de la section <head> -->
+</head>
+<body>
+    <nav>
+        {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}">Déconnexion</a>
+        {% endif %}
+        <ul class="navbar-nav">
+            <!-- Other links -->
+            {% if user.is_authenticated and user.psychologist %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'create_patient' %}">Create Patient</a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+
+    <div class="content">
+        {% block content %}
+        <!-- Contenu spécifique à chaque page sera inséré ici -->
+        {% endblock %}
+    </div>
+
+    <footer>
+        <!-- Ajoutez ici votre pied de page -->
+    </footer>
+</body>
+</html>

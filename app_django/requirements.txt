@@ -1,0 +1,3 @@
+Django
+transformers
+psycopg2
