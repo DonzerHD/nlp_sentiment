@@ -1,7 +1,13 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Create Patient - Mon site</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/patient_form.css' %}">
+{% endblock %}
 
 {% block content %}
-  <h2>Create New Patient</h2>
+  <h2>Create Patient</h2>
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}

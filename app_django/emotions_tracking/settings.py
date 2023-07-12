@@ -123,6 +123,18 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Indique où trouver les fichiers statiques dans votre système de fichiers
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
+
+ELASTICSEARCH_DSL = {
+    'default': {
+        'hosts': 'localhost:9200',  # Spécifiez l'hôte et le port du serveur Elasticsearch
+    },
+}
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 

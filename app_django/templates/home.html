@@ -1,6 +1,15 @@
 {% extends 'base.html' %}
+{% load static %}
+
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <title>Home</title>
+{% endblock %}
 
 {% block content %}
-<h1>Bienvenue sur la page d'accueil !</h1>
-<p>C'est le contenu spécifique de la page d'accueil.</p>
+    <div id="home-content">
+        <h1>Bienvenue sur la page d'accueil !</h1>
+        <p>C'est le contenu spécifique de la page d'accueil.</p>
+    </div>
 {% endblock %}

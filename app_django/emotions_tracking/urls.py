@@ -24,4 +24,6 @@ urlpatterns = [
     path('login/', views.CustomLoginView.as_view(), name='login'),
     path('', HomeView.as_view(), name='home'),
     path('logout/', views.CustomLogoutView.as_view(), name='logout'),
+    path('create_patient/', views.PatientCreateView.as_view(), name='create_patient'),
+    path('patient_list/', views.PatientListView.as_view(), name='patient_list'),
 ]
