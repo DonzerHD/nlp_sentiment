@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
+    'django_elasticsearch_dsl',
+    'search',
 ]
 
 MIDDLEWARE = [
@@ -131,7 +133,7 @@ STATICFILES_DIRS = [
 
 ELASTICSEARCH_DSL = {
     'default': {
-        'hosts': 'localhost:9200',  # Spécifiez l'hôte et le port du serveur Elasticsearch
+        'hosts': 'elasticsearch:9200',
     },
 }
 

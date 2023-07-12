@@ -1,4 +1,5 @@
 version: '3'
+
 services:
   web:
     build: .
@@ -9,15 +10,27 @@ services:
       - 8000:8000
     depends_on:
       - db
+      - elasticsearch
+    networks:
+      - mynetwork
+
   db:
     image: postgres
     environment:
       POSTGRES_PASSWORD: emotions
     ports:
       - 5432:5432
+    networks:
+      - mynetwork
+
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
     environment:
       - "discovery.type=single-node"
     ports:
       - 9200:9200
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:

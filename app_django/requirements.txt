@@ -2,3 +2,5 @@ Django
 transformers
 psycopg2
 elasticsearch-dsl
+django_elasticsearch_dsl
+faker
