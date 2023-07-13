@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Text Search</h1>
+
+    <form method="GET" action="{% url 'text_search' %}">
+        <input type="text" name="expression" placeholder="Enter expression">
+        <input type="submit" value="Search">
+    </form>
+
+    {% if results %}
+        <h2>Results ({{ total_results }})</h2>
+        <ul>
+            {% for result in results %}
+                <li>{{ result.text }} - {{ result.emotion }} ({{ result.first_name }} {{ result.last_name }})</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}

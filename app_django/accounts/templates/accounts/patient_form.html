@@ -2,15 +2,21 @@
 {% load static %}
 
 {% block head %}
+    <!-- This block defines the content of the head tag. -->
     <title>Create Patient - Mon site</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/patient_form.css' %}">
 {% endblock %}
 
 {% block content %}
-  <h2>Create Patient</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Create</button>
-  </form>
+    <!-- This block defines the content of the body tag. -->
+    <h2>Create Patient</h2>
+    <!-- This tag creates a form with the method set to post. -->
+    <form method="post">
+        <!-- This tag adds a CSRF token to the form. -->
+        {% csrf_token %}
+        <!-- This tag renders the form as a paragraph. -->
+        {{ form.as_p }}
+        <!-- This tag creates a button with the text Create. -->
+        <button type="submit">Create</button>
+    </form>
 {% endblock %}

@@ -17,6 +17,11 @@
                 {% if user.is_authenticated and user.psychologist %}
                     <li><a class="nav-link" href="{% url 'create_patient' %}">Create Patient</a></li>
                     <li><a class="nav-link" href="{% url 'patient_list' %}">List Patients</a></li>
+                    <li><a class="nav-link" href="{% url 'patient_emotions' %}">Search Patient</a></li>
+                    <li><a class="nav-link" href="{% url 'text_search' %}">Text Search</a></li>
+                {% endif %}
+                {% if user.is_authenticated and user.patient %}
+                    <li><a class="nav-link" href="{% url 'create_text' %}">Create Text</a></li>
                 {% endif %}
             </ul>
         </nav>

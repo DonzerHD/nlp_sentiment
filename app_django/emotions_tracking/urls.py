@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from accounts import views 
 from emotions_tracking.views import HomeView
-
+from search import views as search_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +26,7 @@ urlpatterns = [
     path('logout/', views.CustomLogoutView.as_view(), name='logout'),
     path('create_patient/', views.PatientCreateView.as_view(), name='create_patient'),
     path('patient_list/', views.PatientListView.as_view(), name='patient_list'),
+    path('emotions/', search_views.PatientEmotionsView.as_view(), name='patient_emotions'),
+    path('text-search/', search_views.TextSearchView.as_view(), name='text_search'),
+    path('create-text/', search_views.create_text, name='create_text'),
 ]

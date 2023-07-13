@@ -1,12 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Liste des patients</h2>
-  <ul>
-    {% for patient in patients %}
-      <li>{{ patient.user.first_name }} {{ patient.user.last_name }}</li>
-    {% empty %}
-      <li>Aucun patient trouvé.</li>
-    {% endfor %}
-  </ul>
+    <!-- This block defines the content of the body tag. -->
+    <h2>Liste des patients</h2>
+    <!-- This tag creates an unordered list. -->
+    <ul>
+        <!-- This loop iterates over the patients list. -->
+        {% for patient in patients %}
+            <!-- This tag renders the patient's first name and last name. -->
+            <li>{{ patient.user.first_name }} {{ patient.user.last_name }}</li>
+        {% empty %}
+            <!-- This tag renders a message if no patients are found. -->
+            <li>Aucun patient trouvé.</li>
+        {% endfor %}
+    </ul>
 {% endblock %}

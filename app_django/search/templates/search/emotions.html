@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Emotion Distribution</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Emotion Distribution</h1>
+
+    <form method="GET" action="/emotions/">
+        <input type="text" name="first_name" placeholder="Prénom">
+        <input type="text" name="last_name" placeholder="Nom">
+        <input type="submit" value="Rechercher">
+    </form>
+
+    <ul>
+        {% for emotion, count in emotion_distribution.items %}
+            <li>{{ emotion }}: {{ count }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
